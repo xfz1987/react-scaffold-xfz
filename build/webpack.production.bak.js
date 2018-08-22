@@ -10,12 +10,12 @@ const os = require('os')
 const happyThreadPool = HappyPack.ThreadPool({ size: 4 })
 const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
 
-const publicPath = '//127.0.0.1:8000/'
+const cdnPath = '//127.0.0.1:8000/'
 
 const prodConfig = {
   output: {
     path: resolve(__dirname, '../dist'), 
-    publicPath: publicPath,
+    publicPath: cdnPath,
     filename: 'js/[name].[chunkhash:5].js'
   },
   devtool: false,
@@ -41,7 +41,7 @@ const prodConfig = {
             options:{
               limit: 8192,
               name: 'resource/[name].[hash:5].[ext]',
-              publicPath: publicPath
+              publicPath: cdnPath
             }
           }
         ]
@@ -105,7 +105,6 @@ const prodConfig = {
       filename: 'index.html',
       template: resolve(__dirname, '../src/index.html'),
       title: '后台管理系统',
-      favicon: resolve(__dirname, '../favicon.ico'),
       minify: {
         collapseWhitespace: true,
         removeAttributeQuotes: true,

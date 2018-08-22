@@ -51,7 +51,8 @@ const devConfig = {
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: resolve(__dirname, '../src/index.html')
+      template: resolve(__dirname, '../src/index.html'),
+      title: '后台管理系统'
     })
   ],
   devtool: 'inline-source-map',
