@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["es2015",{
+        "modules": false
+    }],
+    "stage-2",
+    "react",
+  ],
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ],
+    "syntax-dynamic-import"
+  ]
+}

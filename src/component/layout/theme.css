@@ -1,0 +1,28 @@
+/*----------------------------------------------
+Author : www.webthemez.com
+License: Commons Attribution 3.0
+http://creativecommons.org/licenses/by/3.0/
+------------------------------------------------*/
+
+
+/*----------------------------------------------
+    COMMON  STYLES    
+------------------------------------------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f3f3f3;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.page-wrapper {
+    padding: 15px 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
