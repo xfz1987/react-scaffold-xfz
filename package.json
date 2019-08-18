@@ -1,9 +1,9 @@
 {
-  "name": "admin-fe",
+  "name": "[name]",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "",
-  "author": "{{author}}",
+  "author": "[author]",
   "description": "{{description}}",
   "license": "MIT",
   "scripts": {
